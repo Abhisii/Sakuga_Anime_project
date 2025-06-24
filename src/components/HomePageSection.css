@@ -1,0 +1,124 @@
+/* AnimeHeroSection.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root { --primary-bg: 
+#000000; --accent-green: 
+#A8E6A1; --text-light: 
+#FFFFFF; --text-secondary: 
+#E0E0E0; --search-bg: 
+#1A1A1A; --card-bg: 
+#131313; --card-hover: 
+#1E1E1E; }
+
+body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background-color: var(--primary-bg); color: var(--text-light); }
+
+.hero-container { width: 100%; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; box-sizing: border-box;}
+ 
+
+/*NavBar content ############################################*/
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: var(--accent-green);
+
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+
+/*Seach section content ###############################################*/
+.search-container { width: 100%; max-width: 800px; margin-bottom: 2rem; position: relative; }
+
+.search-input { width: 100%; padding: 1rem 1.5rem; border-radius: 8px; background-color: var(--search-bg); border: 1px solid #333; color: var(--text-light); font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); }
+
+.search-input:focus { outline: none; border-color: var(--accent-green); box-shadow: 0 4px 20px rgba(168, 230, 161, 0.15); }
+
+.search-input::placeholder { color: #888; }
+
+.search-button { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: #888; cursor: pointer; transition: color 0.3s ease; }
+
+.search-button:hover { color: var(--accent-green); }
+
+.separator { width: 60px; height: 4px; background-color: var(--accent-green); border-radius: 2px; margin: 2rem auto; }
+
+
+
+/*Category Section #########################################################*/
+.category-section { width: 100%; max-width: 1200px; margin-top: 3rem; }
+
+.section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+
+.section-title { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 600; }
+
+.view-all { color: var(--accent-green); background: none; border: none; cursor: pointer; font-size: 0.9rem; transition: all 0.3s ease; }
+
+.view-all:hover { text-decoration: underline; }
+
+
+.bottom-separator { width: 100%; height: 1px; background-color: var(--accent-green); opacity: 0.3; margin-top: 3rem; }
+
+/* Media Queries for Responsiveness */ @media (max-width: 768px) 
+{ .hero-title { font-size: 2rem; }
+
+.hero-subtitle { font-size: 1rem; }
+
+.category-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } 
+}
+@media (max-width: 480px) { .hero-title { font-size: 1.8rem; }
+.category-grid { grid-template-columns: repeat(2, 1fr); } }
+

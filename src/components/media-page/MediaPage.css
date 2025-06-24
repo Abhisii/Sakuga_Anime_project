@@ -1,0 +1,27 @@
+
+/* -------------------------------------------------------
+  MediaPage.css
+  (inherits global vars from HomePageSection.css)
+--------------------------------------------------------*/
+
+/* Hide scrollbars */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Optional: style navbar links consistently */
+.nav-link {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--accent-green);
+}
