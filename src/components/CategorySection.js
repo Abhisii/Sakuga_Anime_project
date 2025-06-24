@@ -68,7 +68,7 @@ const CategorySection = ({ title, categories }) => {
     <a
   key={name}
   href={`/media/${encodeURIComponent(name)}`}
-  target="_blank"
+  
   rel="noopener noreferrer"
   className="relative group min-w-[200px] h-[260px] bg-[#131313] hover:bg-[#1E1E1E] text-white flex items-center justify-center rounded-xl shadow-md hover:shadow-lg cursor-pointer transition-all overflow-hidden"
 >
