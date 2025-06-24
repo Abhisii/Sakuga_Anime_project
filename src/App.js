@@ -1,19 +1,19 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import HomePageSection from './components/HomePageSection';
 import MediaPage from './components/media-page/MediaPage';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/Sakuga_Anime_project">
       
         <Routes>
           <Route path="/" element={<HomePageSection />} />
           <Route path="/media/:animeName" element={<MediaPage />} />
         </Routes>
       
-    </Router>
+    </BrowserRouter>
   );
 }
 
