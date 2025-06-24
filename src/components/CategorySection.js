@@ -65,13 +65,11 @@ const CategorySection = ({ title, categories }) => {
   const { name, description, image, ...rest } = cat;   // ← grab fields
 
   return (
-    <a
-  key={name}
-  href={`/media/${encodeURIComponent(name)}`}
-  
-  rel="noopener noreferrer"
-  className="relative group min-w-[200px] h-[260px] bg-[#131313] hover:bg-[#1E1E1E] text-white flex items-center justify-center rounded-xl shadow-md hover:shadow-lg cursor-pointer transition-all overflow-hidden"
->
+    <Link
+      key={name}
+      to={`media/${encodeURIComponent(name)}`}
+      className="relative group min-w-[200px] h-[260px] bg-[#131313] hover:bg-[#1E1E1E] text-white flex items-center justify-center rounded-xl shadow-md hover:shadow-lg cursor-pointer transition-all overflow-hidden"
+    >
   <img
     src={image}
     alt={name}
@@ -87,7 +85,7 @@ const CategorySection = ({ title, categories }) => {
       {description}
     </p>
   </div>
-</a>
+</Link>
 
   );
 })}
