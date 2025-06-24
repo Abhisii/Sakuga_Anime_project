@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sakuga_Anime_project/static/css/main.afd673b6.css",
-    "main.js": "/Sakuga_Anime_project/static/js/main.1489f93e.js",
+    "main.js": "/Sakuga_Anime_project/static/js/main.2381d736.js",
     "static/media/kinder-world-is-doko.jpg": "/Sakuga_Anime_project/static/media/kinder-world-is-doko.c140fbf806f18bf00198.jpg",
     "static/media/dandadan-arc1.png": "/Sakuga_Anime_project/static/media/dandadan-arc1.3a0f4dbf69f68fbe97b2.png",
     "static/media/kinonoke.jpg": "/Sakuga_Anime_project/static/media/kinonoke.407e128c3fe7af090dad.jpg",
@@ -27,10 +27,10 @@
     "static/media/jpg": "/Sakuga_Anime_project/static/media/58ef36ebfa3ce4a5144f2d969cab2955.b4c1f0af5d103be9bf57.jpg",
     "index.html": "/Sakuga_Anime_project/index.html",
     "main.afd673b6.css.map": "/Sakuga_Anime_project/static/css/main.afd673b6.css.map",
-    "main.1489f93e.js.map": "/Sakuga_Anime_project/static/js/main.1489f93e.js.map"
+    "main.2381d736.js.map": "/Sakuga_Anime_project/static/js/main.2381d736.js.map"
   },
   "entrypoints": [
     "static/css/main.afd673b6.css",
-    "static/js/main.1489f93e.js"
+    "static/js/main.2381d736.js"
   ]
 }
